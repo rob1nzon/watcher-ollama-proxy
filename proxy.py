@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Watcher → Ollama proxy: replaces SenseCAP Watcher Service with Ollama."""
 
-import base64
+from __future__ import annotations
+
 import json
 import logging
-import sys
-import tempfile
 from pathlib import Path
 
 import requests

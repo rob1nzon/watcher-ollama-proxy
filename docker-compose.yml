@@ -1,0 +1,10 @@
+services:
+  watcher-proxy:
+    build: .
+    ports:
+      - "8887:8887"
+    volumes:
+      - ./config.json:/app/config.json
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped

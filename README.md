@@ -6,6 +6,17 @@ The physical Watcher device sends images + prompts to the Watcher Service. This 
 
 ## Quick Start
 
+### Docker (recommended)
+
+```bash
+cp config.example.json config.json   # edit as needed
+docker compose up -d
+```
+
+Ollama should be running on the host. The container uses `host.docker.internal` to reach it.
+
+### Manual
+
 ```bash
 pip install -r requirements.txt
 python proxy.py
@@ -13,7 +24,7 @@ python proxy.py
 
 ## Config
 
-Edit `config.json`:
+Copy `config.example.json` to `config.json` and edit:
 
 | Key | Default | Description |
 |-----|---------|-------------|

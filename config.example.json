@@ -1,0 +1,9 @@
+{
+  "port": 8887,
+  "host": "0.0.0.0",
+  "token": "change-me",
+  "ollama_url": "http://host.docker.internal:11434",
+  "model": "gemma3:latest",
+  "temperature": 0.3,
+  "timeout": 120
+}
